@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/logo.png" sizes="96x96" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <title>KantoResto</title>
+</head>
+
+<body>
+    <div class="bannerpic">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" alt="Kanto resto logo"></a>
+            </div>
+            <div class="navbar">
+
+                <div class="icon-bar" onclick="Show()">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </div>
+
+                <ul id="nav-lists">
+                    <li class="close"><span onclick="Hide()">×</span></li>
+                    <li><a class="actief" href="index.html">Home</a></li>
+                    <li><a href="reserveer.html">Reserveer</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="personeel.html">Wie zijn wij</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="banner">
+            <div class="grid-auto-kolom ">
+                <div>
+                    <h1 class="banner-titel">Kanto Resto</h1>
+                </div>
+            </div>
+
+            <div class="grid-auto-kolom">
+                <div>
+                    <a href="reserveer.html" class="reserveer-button">Reserveer</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="grid-auto-kolom-home">
+        <div>
+            <h2 class="tussentitel"> Menu van de dag</h2>
+            <p class="dunnetekst"> Voorgerecht: Carpaccio van kip <br> Deze carpaccio van kip met rucola, zongedroogde tomaatjes en pijnboompitjes is een heerlijke start. <br>
+            <br> Hoofdgerecht: Chicken pie <br>
+             Een chicken pie is een typisch Engels recept. Wij hebben een lekkere variant gemaakt met wortel, broccoli en doperwtjes. Kip, spekjes en groenten in een romige saus met een dakje van bladerdeeg.
+
+             <br> <br>
+             Nagerecht: Mango tiramisu <br>
+             Fris en tropisch toetje van laagjes room, lange vinger en mango met eventueel een scheutje Limoncello.
+             <br> <br> Prijs: €25 
+
+        </p>
+        </div>
+        <div>
+            <h2 class="tussentitel">Evenementen </h2>
+            <p class="dunnetekst">Maandagavonden: Start van de bingotoernooi <br>Dinsdagavonden: start van pokertoernooi <br>
+                Donderdagavonden: Finale van bingotoernooi <br> Vrijdagavonden: Finale van pokertoernooi
+                <br>
+                <br>
+                
+        </div>
+        <div>
+            <h2 class="tussentitel">Over Ons</h2>
+            <p class="dunnetekst">
+            In hartje Leuven, is het moeilijk één van de meest opbloeiende straten op gebied van verschillende eetcultuur te ontlopen. Wij, daarentegen, bieden hier, reeds meer dan 3 jaar onze specialiteit aan. Ons restaurant is een plaats waar ons cliënteel, zijnde studenten, toeristen of de gewone Leuvenaar gezellig kunnen genieten van een kleine hap, een middag- of avondmaal. </p>
+
+        </div>
+    </div>
+
+
+    <div class="footer">
+        Copyright © 2021
+    </div>
+
+    <script>
+        var navList = document.getElementById("nav-lists");
+
+        function Show() {
+            navList.classList.add("_Menus-show");
+        }
+
+        function Hide() {
+            navList.classList.remove("_Menus-show");
+        }
+    </script>
+</body>
+
+</html>

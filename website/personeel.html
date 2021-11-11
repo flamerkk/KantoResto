@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/logo.png" sizes="96x96" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <title>KantoResto | Het Team</title>
+</head>
+
+<body>
+    <div class="bannerpic4">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" alt="Kanto resto logo"></a>
+            </div>
+            <div class="navbar">
+
+                <div class="icon-bar" onclick="Show()">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </div>
+
+                <ul id="nav-lists">
+                    <li class="close"><span onclick="Hide()">×</span></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="reserveer.html">Reserveer</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a class="actief" href="personeel.html">Wie zijn wij</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+            </div>
+        </div>
+        <h1 class="teamheader">-- Het Team --</h1>
+        <div class="personeelgrid">
+            <div class="person">
+                <div><img src="img/staff/person1.jpeg" alt="first picture of staff"></div>
+                <div>
+                    <div>
+                        <p>Linda Brown</p>
+                        <p>Keukenchef</p>
+                        <p>27 jaar</p>
+                        <p>Dansen</p>
+                    </div>
+                </div>
+            </div>
+            <div class="person">
+                <div><img src="img/staff/person2.jpeg" alt="second picture of staff"></div>
+                <div>
+                    <div>
+                        <p>Brenda Lima</p>
+                        <p>Tweede chef van de keuken</p>
+                        <p>28 jaar</p>
+                        <p>Fitness</p>
+                    </div>
+                </div>
+            </div>
+            <div class="person">
+                <div><img src="img/staff/person3.jpeg" alt="third picture of staff"></div>
+                <div>
+                    <div>
+                        <p>Kaldinho Chari</p>
+                        <p>Kok voor de soepen</p>
+                        <p>22 jaar</p>
+                        <p>Tennis</p>
+                    </div>
+                </div>
+            </div>
+            <div class="person">
+                <div><img src="img/staff/person4.jpeg" alt="fourth picture of staff"></div>
+                <div>
+                    <div>
+                        <p>Arin Bossman</p>
+                        <p>Kok voor de warme visgerechten</p>
+                        <p>30 jaar</p>
+                        <p>Zwemmen</p>
+                    </div>
+                </div>
+            </div>
+            <div class="person">
+                <div><img src="img/staff/person5.jpeg" alt="fifth picture of staff"></div>
+                <div>
+                    <div>
+                        <p>Nabilal De Witte</p>
+                        <p>Leerling-kok</p>
+                        <p>19 jaar </p>
+                        <p>Gamen</p>
+                    </div>
+                </div>
+            </div>
+            <div class="person">
+                <div><img src="img/staff/person6.jpeg" alt="sixth picture of staff"></div>
+                <div>
+                    <div>
+                        <p>Karel Versein</p>
+                        <p>Leerling-kok</p>
+                        <p>30 jaar</p>
+                        <p>schaken</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            Copyright © 2021
+        </div>
+    </div>
+
+    <script>
+        var navList = document.getElementById("nav-lists");
+
+        function Show() {
+            navList.classList.add("_Menus-show");
+        }
+
+        function Hide() {
+            navList.classList.remove("_Menus-show");
+        }
+    </script>
+</body>
+
+</html>
